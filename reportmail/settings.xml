@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+	<URL>https://spamreport.spamrl.com/spamreport.php</URL>
+	<RequestType>POST</RequestType>
+	<PostField>mailContent</PostField>
+	<Username></Username>
+	<Password></Password>
+	<Response>OK</Response>
+</settings>

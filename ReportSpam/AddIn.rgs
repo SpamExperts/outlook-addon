@@ -1,0 +1,26 @@
+HKCR
+{
+	ReportSpam.Connect.1 = s 'Connect Class'
+	{
+		CLSID = s '{4BD1F3EA-DD35-4FBF-88E6-24F13D0B991F}'
+	}
+	ReportSpam.Connect = s 'Connect Class'
+	{
+		CLSID = s '{4BD1F3EA-DD35-4FBF-88E6-24F13D0B991F}'
+		CurVer = s 'ReportSpam.Connect.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove '{4BD1F3EA-DD35-4FBF-88E6-24F13D0B991F}' = s 'Connect Class'
+		{
+			ProgID = s 'ReportSpam.Connect.1'
+			VersionIndependentProgID = s 'ReportSpam.Connect'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{DD2111E8-DB85-471D-B37F-78AF2A85216B}'
+		}
+	}
+}
